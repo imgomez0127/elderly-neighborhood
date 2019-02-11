@@ -1,0 +1,6 @@
+from models import Volunteer, Elderly, Meets,db, User
+oldman = Elderly(username="Yeet1",password="yeeter1",zipCode="07621",phone_number=12,typesPref="yeetyah1",address="123 yeet st")
+meet1 = Meets(meetup_name = "YOLO")
+vol = Volunteer(username="swag",password="swagger",zipCode="07621",typesPref="audwnaui",phone_number=2, address="123 swag st")
+oldman.meets_elderly.append(meet1)
+vol.volunteer_meets.append(meet1)
